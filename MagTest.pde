@@ -62,7 +62,7 @@ void readAll(){
 
   for (byte axis = 0; axis <= 2; axis++) {
     Serial.print("Axis ");
-    Serial.print(axis);
+    Serial.print(axis, DEC);
     Serial.print(": ");
     Serial.println(readNextWordFlip());
   }
